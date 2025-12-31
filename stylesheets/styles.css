@@ -1,0 +1,34 @@
+body {
+  display: grid;
+  grid-template: 1.5fr 4fr / minmax(120px, 1fr) minmax(350px, 4fr);
+  min-height: 100vh;
+}
+
+#header {
+  grid-area: 1 / 2 / 2 / -1;
+  outline: 2px solid black;
+}
+
+#sidebar {
+  grid-area: 1 / 1 / -1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: min(5.5vw, 3.5rem);
+  outline: 2px solid black;
+}
+
+.branding, .navigation, .general {
+  display: grid;
+  grid-template-columns: minmax(40px, 1.5fr) 4fr;
+  margin-left: max(0.5vw, 4px);
+  font-size: clamp(0.7rem, 1.4vw, 2.5rem);
+}
+
+.branding { margin-top: max(1.2vw, 8.2px); }
+
+.title { font-size: clamp(0.9rem, 2vw, 4rem); }
+
+#main {
+  grid-area: 2 / 2 / -1 / -1;
+  outline: 2px solid black;
+}
