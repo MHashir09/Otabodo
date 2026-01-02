@@ -6,21 +6,46 @@ body {
 
 #header {
   grid-area: 1 / 2 / 2 / -1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   outline: 2px solid black;
+}
+
+.sb-cont {
+  max-width: 80%;
+}
+
+.sb-cont > button, .side-cont > button  {
+  all: unset;
+}
+
+.sb-cont > input {
+  flex: 1;
+}
+
+.side-cont {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: right;
+}
+
+.user-info-cont {
+  display: flex;
+  gap: 2rem;
 }
 
 #sidebar {
   grid-area: 1 / 1 / -1 / 2;
   display: flex;
   flex-direction: column;
-  gap: min(5.5vw, 3.5rem);
+  gap: min(5vw, 3rem);
   outline: 2px solid black;
 }
 
 .branding, .navigation, .general {
   display: grid;
   grid-template-columns: minmax(40px, 1.5fr) 4fr;
-  margin-left: max(0.5vw, 4px);
+  margin-left: max(0.8vw, 4.2px);
   font-size: clamp(0.7rem, 1.4vw, 2.5rem);
 }
 
