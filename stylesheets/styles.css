@@ -8,30 +8,110 @@ body {
   grid-area: 1 / 2 / 2 / -1;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  outline: 2px solid black;
+  margin: max(1.5vw, 8.5px) max(3vw, 18px) 0 max(3vw, 18px);
 }
 
 .sb-cont {
+  display: flex;
+  gap: clamp(0.3rem, 0.8vw, 0.8rem);
   max-width: 80%;
 }
 
-.sb-cont > button, .side-cont > button  {
-  all: unset;
-}
 
 .sb-cont > input {
   flex: 1;
+  border: none;
+  background: whitesmoke;
+  border-radius: 100rem;
+  height: clamp(0.9rem, 2vw, 4rem);
 }
 
 .side-cont {
   display: flex;
-  gap: 0.6rem;
+  gap: clamp(1rem, 2vw, 2rem);
   justify-content: right;
+  margin-right: max(0.3rem, 2vw);
+}
+
+.side-cont > .profile-img {
+  width: clamp(20px, 3.5vw, 5.5rem);
+  height: clamp(20px, 3.5vw, 5.5rem);
+  border-radius: 50%;
+  background: black;
+  position: relative;
+  bottom: max(1.6px, 0.6vw);
+}
+
+.side-cont > .display-name {
+  font-size: clamp(0.8rem, 1.6vw, 2.8rem);
+  font-weight: 800;
+  height: min-content;
+}
+
+
+.sb-cont > button, .side-cont > button {
+  all: unset;
+  cursor: pointer;
+  height: min-content;
+  font-size: clamp(0.8rem, 1.9vw, 3.8rem);
+}
+
+.mdi-magnify, .mdi-bell-ring-outline{
+  position: relative;
+  bottom: max(1.5px, 0.4vw);
+}
+
+.mdi-theme-light-dark {
+  position: relative;
+  font-size: clamp(0.9rem, 2.1vw, 3.9rem);
+  bottom: max(1.6px, 0.5vw);
 }
 
 .user-info-cont {
   display: flex;
-  gap: 2rem;
+  gap: min(3vw, 1.5rem);
+}
+
+.user-info-cont > .profile-img {
+  width: clamp(35px, 4.5vw, 6.5rem);
+  height: clamp(35px, 4.5vw, 6.5rem);
+  border-radius: 50%;
+  background: black;
+}
+
+.user-id {
+  height: min-content;
+  align-self: center;
+  font-size: clamp(0.6rem, 1.6vw, 2.6rem);
+  margin-top: -0.2vw;
+  font-weight: 800;
+  position: relative;
+}
+
+.user-id::before {
+  content: "Greetings,";
+  font-size: clamp(6px, 0.95vw, 1rem);
+  position: absolute;
+  bottom: clamp(16px, 2.3vw, 3rem);
+  left: -5px;
+}
+
+.btn-cont {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 3.5rem);
+  justify-content: right;
+}
+
+.btn-cont button {
+  all: unset;
+  background-color: lightblue;
+  width: clamp(3rem, 6vw, 5.6rem);
+  font-size: min(1.2vw, 2rem);
+  text-align: center;
+  border-radius: 100rem;
+  padding: 0.42rem 0.4rem 0.4rem 0.4rem;
+  cursor: pointer;
 }
 
 #sidebar {
@@ -39,7 +119,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: min(5vw, 3rem);
-  outline: 2px solid black;
+  margin-top: max(1.2vw, 8.2px);
 }
 
 .branding, .navigation, .general {
@@ -49,9 +129,10 @@ body {
   font-size: clamp(0.7rem, 1.4vw, 2.5rem);
 }
 
-.branding { margin-top: max(1.2vw, 8.2px); }
-
-.title { font-size: clamp(0.9rem, 2vw, 4rem); }
+.title {
+  font-size: clamp(0.9rem, 2vw, 4rem);
+  font-weight: 800;
+}
 
 #main {
   grid-area: 2 / 2 / -1 / -1;
