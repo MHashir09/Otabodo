@@ -5,16 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Otabōdo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
   <link rel="stylesheet" href="stylesheets/reset.css" />
   <link rel="stylesheet" href="stylesheets/styles.css" />
+  <link rel="icon" href="media/logo.png" type="image/png">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <div id="header">
     <form class="sb-cont">
       <button><span class="mdi mdi-magnify"></span></button>
-      <input name="query" />
+      <input name="query" placeholder="Search.." />
     </form>
     <div class="side-cont">
       <button><span class="mdi mdi-bell-ring-outline"></span></button>
@@ -34,30 +39,30 @@
   </div>
   <div id="sidebar">
     <div class="branding">
-      <div class="icon">logo</div>
+      <div class="logo"></div>
       <h1 class="title">Otabōdo</h1>
     </div>
     <div class="navigation">
-      <div class="icon"><img src="" alt="icn" /></div>
-      <div class="nav-item">Home</div>
-      <div class="icon"><img src="" alt="icn" /></div>
-      <div class="nav-item">Profile</div>
-      <div class="icon"><img src="" alt="icn" /></div>
-      <div class="nav-item">Messages</div>
-      <div class="icon"><img src="" alt="icn" /></div>
-      <div class="nav-item">History</div>
-      <div class="icon"><img src="" alt="icn" /></div>
-      <div class="nav-item">Tasks</div>
-      <div class="icon"><img src="" alt="icn" /></div>
-      <div class="nav-item">Communities</div>
+      <div class="icon"><span class="mdi mdi-home-outline"></span></div>
+      <div class="item">Home</div>
+      <div class="icon"><span class="mdi mdi-card-account-details-outline"></span></div>
+      <div class="item">Profile</div>
+      <div class="icon"><span class="mdi mdi-message-reply-text-outline"></span></div>
+      <div class="item">Messages</div>
+      <div class="icon"><span class="mdi mdi-clock-outline"></span></div>
+      <div class="item">History</div>
+      <div class="icon"><span class="mdi mdi-file-multiple-outline"></span></div>
+      <div class="item">Tasks</div>
+      <div class="icon"><span class="mdi mdi-account-group-outline"></span></div>
+      <div class="item">Communities</div>
     </div>
     <div class="general">
-      <div class="icon"><img src="" alt="icn" /></div>
-      <div class="gen-item">Settings</div>
-      <div class="icon"><img src="" alt="icn" /></div>
-      <div class="gen-item">Support</div>
-      <div class="icon"><img src="" alt="icn" /></div>
-      <div class="gen-item">Privacy</div>
+      <div class="icon"><span class="mdi mdi-cog-outline"></span></div>
+      <div class="item">Settings</div>
+      <div class="icon"><span class="mdi mdi-help-box-outline"></span></div>
+      <div class="item">Support</div>
+      <div class="icon"><span class="mdi mdi-shield-check-outline"></span></div>
+      <div class="item">Privacy</div>
     </div>
   </div>
   <div id="main">
@@ -65,11 +70,10 @@
       <h3 class="sect-title">Your Watch List</h3>
       <div class="card">
         <div class="card-content">
-          <h3>Placeholder</h3>
+          <h3>Welcome To NHK</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae explicabo hic eveniet, atque consectetur quia minus
-            laudantium impedit voluptatem aliquam, perspiciatis dolorem at!
+            Welcome to the N.H.K." is a Japanese novel series that explores themes of social withdrawal, depression, and
+            conspiracy through the story of Tatsuhiro Satō, a 22-year-old hikikomori. The series...
           </p>
         </div>
         <div class="card-icons">
@@ -80,11 +84,10 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <h3>Placeholder</h3>
+          <h3>Devilman Crybaby</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-            debitis nihil ratione doloribus adipisci. Nihil eligendi
-            reprehenderit in doloribus temporibus mollitia adipisci ex!
+            With demons reawakened and humanity in turmoil, a sensitive demon-boy is led into a brutal, degenerate war
+            against evil by his mysterious friend. Directed by Masaaki Yuasa, produced by Aniplex an...
           </p>
         </div>
         <div class="card-icons">
@@ -95,11 +98,10 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <h3>Placeholder</h3>
+          <h3>Cowboy Bepop</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-            debitis nihil ratione doloribus adipisci. Nihil eligendi
-            reprehenderit in doloribus temporibus mollitia adipisci ex!
+            Scouring space for bounties, a ragtag crew — a former hitman, an ex-cop, a con artist, a hacker kid and a
+            data dog — live paycheck to paycheck. Created and animated by Sunrise, it was led by a production te...
           </p>
         </div>
         <div class="card-icons">
@@ -110,11 +112,10 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <h3>Placeholder</h3>
+          <h3>D A ᴙ K</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-            debitis nihil ratione doloribus adipisci. Nihil eligendi
-            reprehenderit in doloribus temporibus mollitia adipisci ex!
+            A small German town hides a dark secret that spans generations. When children start disappearing, four
+            families uncover a mind-bending mystery involving time travel, hidden connections and the sho...
           </p>
         </div>
         <div class="card-icons">
@@ -125,11 +126,10 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <h3>Placeholder</h3>
+          <h3>JoJo's Bizarre Adventure</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-            debitis nihil ratione doloribus adipisci. Nihil eligendi
-            reprehenderit in doloribus temporibus mollitia adipisci ex!
+            JoJo’s Bizarre Adventure is a stylish, over-the-top anime that follows the Joestar family as they face
+            strange and powerful enemies across different generations. It is a Japanese manga series written an...
           </p>
         </div>
         <div class="card-icons">
@@ -140,11 +140,10 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <h3>Placeholder</h3>
+          <h3>The Umbrella Academy</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
-            debitis nihil ratione doloribus adipisci. Nihil eligendi
-            reprehenderit in doloribus temporibus mollitia adipisci ex!
+            The Umbrella Academy follows a dysfunctional family of adopted siblings who all have extraordinary powers.
+            After their mysterious father dies, they reunite to uncover secrets about their pa...
           </p>
         </div>
         <div class="card-icons">
@@ -158,18 +157,18 @@
       <h3 class="sect-title">Announcements</h3>
       <div class="ancmnt-cont">
         <div class="announcement">
-          <h4>Placeholder</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eveniet eum.</p>
+          <h4>Premieres This Month</h4>
+          <p>Major series including Pokémon Horizons S3 and Netflix original Cosmic Princess Kaguya! ar...</p>
         </div>
         <hr>
         <div class="announcement">
-          <h4>Placeholder</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eveniet eum.</p>
+          <h4>Winter 2026 Anime</h4>
+          <p>The Winter anime season is in full swing with big titles like Fire Force S3, Hell’s Paradise S2...</p>
         </div>
         <hr>
         <div class="announcement">
-          <h4>Placeholder</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eveniet eum.</p>
+          <h4>Stranger Things 5</h4>
+          <p>Netflix has confirmed Season 5 as the final chapter of Stranger Things, continuing after the eve...</p>
         </div>
       </div>
       <h3 class="sect-title">Trending</h3>
@@ -177,29 +176,29 @@
         <div class="trending">
           <div class="t-item-cover"></div>
           <div class="t-item-info">
-            <h5>Placeholder</h5>
-            <p>Lorem, ipsum dolor.</p>
+            <h5>Sakamoto Days S2</h5>
+            <p>Action, Comedy</p>
           </div>
         </div>
         <div class="trending">
           <div class="t-item-cover"></div>
           <div class="t-item-info">
-            <h5>Placeholder</h5>
-            <p>Lorem, ipsum dolor.</p>
+            <h5>Dan Da Dan S2</h5>
+            <p>Supernatural, Romance</p>
           </div>
         </div>
         <div class="trending">
           <div class="t-item-cover"></div>
           <div class="t-item-info">
-            <h5>Placeholder</h5>
-            <p>Lorem, ipsum dolor.</p>
+            <h5>Run Away</h5>
+            <p>Mystery, Thriller</p>
           </div>
         </div>
         <div class="trending">
           <div class="t-item-cover"></div>
           <div class="t-item-info">
-            <h5>Placeholder</h5>
-            <p>Lorem, ipsum dolor.</p>
+            <h5>The Apothecary Diaries S3</h5>
+            <p>Mystery, Historical</p>
           </div>
         </div>
       </div>
