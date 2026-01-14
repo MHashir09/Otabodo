@@ -21,7 +21,7 @@ This is a just a design to practice grid layout and other css properties and is 
 │   ├── reset.css
 │   └── styles.css
 ├── media/
-│   └── (icons and images)
+│   └── (images)
 └── node_modules/
     └── (MDI dependencies)
 ```
@@ -34,4 +34,4 @@ This is a just a design to practice grid layout and other css properties and is 
 
 ## Credits
 
-Design mockup provided by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard). Icons from [Material Design Icons](https://pictogrammers.com/library/mdi/).
+Design mockup provided by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard). Icons from [Material Design Icons](https://pictogrammers.com/library/mdi/). Images from [Pinterest](https://pinterest.com/).
